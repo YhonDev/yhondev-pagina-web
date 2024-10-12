@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de YhonDev, desarrollador backend especializado en Java y software development.">
+    <meta name="author" content="Yhon Barrios">
+    <meta name="keywords" content="portafolio, desarrollador backend, Java, desarrollo web, software development, Yhon Barrios">
+    <meta name="robots" content="index, follow">
+    
+    <title>YhonDev</title>
+    
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="Portafolio de Yhon Barrios">
+    <meta property="og:description" content="Descubre los proyectos y habilidades de Yhon Barrios, desarrollador especializado en backend con Java.">
+    <meta property="og:image" content="ruta/a/imagen_portada.jpg">
+    <meta property="og:url" content="https://www.yhondev.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portafolio de Yhon Barrios">
+    <meta name="twitter:description" content="Desarrollador backend especializado en Java y software development.">
+    <meta name="twitter:image" content="ruta/a/imagen_portada.jpg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Analytics (opcional) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXXXXXX-X');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#inicio" class="logo">YhonDev</a>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="inicio" aria-label="Inicio">
+            <h1>Yhon Barrios</h1>
+            <p>Desarrollador Backend Especializado en Java y Software Development</p>
+            <a href="#proyectos" class="cta">Ver Proyectos</a>
+        </section>
+
+        <!-- Sección Sobre Mí -->
+        <section id="sobre-mi" aria-label="Sobre mí">
+            <h2>Sobre mí</h2>
+            <p>Me especializo en el desarrollo backend con tecnologías Java, enfocado en la creación de aplicaciones robustas y escalables.</p>
+            <img src="ruta/a/imagen_sobre_mi.jpg" alt="Imagen de Yhon Barrios">
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section id="proyectos" aria-label="Proyectos">
+            <h2>Proyectos</h2>
+            <article>
+                <h3>Proyecto 1</h3>
+                <p>Descripción breve del proyecto.</p>
+                <a href="ruta/a/proyecto1" class="ver-proyecto">Ver más</a>
+            </article>
+            <article>
+                <h3>Proyecto 2</h3>
+                <p>Descripción breve del proyecto.</p>
+                <a href="ruta/a/proyecto2" class="ver-proyecto">Ver más</a>
+            </article>
+        </section>
+
+        <!-- Sección Habilidades -->
+        <section id="habilidades" aria-label="Habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>API REST</li>
+                <li>Base de datos SQL/NoSQL</li>
+            </ul>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" aria-label="Contacto">
+            <h2>Contacto</h2>
+            <form action="/enviar" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 YhonDev | <a href="https://www.yhondev.com">yhondev.com</a></p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/yhonbarrios" aria-label="LinkedIn">LinkedIn</a></li>
+            <li><a href="https://github.com/yhonbarrios" aria-label="GitHub">GitHub</a></li>
+            <li><a href="https://twitter.com/yhonbarrios" aria-label="Twitter">Twitter</a></li>
+        </ul>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/index.js"></script>
+</body>
+</html>
