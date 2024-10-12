@@ -1,3 +1,12 @@
+
+:root {
+  --color-primario: #220022;
+  --color-secundario: #300225;
+  --color-terciario: #300036;
+  --color-fondo: #ecf0f1; /* Color de fondo */
+  --color-texto: #2c3e50; /* Color de texto */
+  --color-texto-claro: #ffffff; /* Color de texto claro */
+}
 /* General */
 * {
   margin: 0;
@@ -9,7 +18,8 @@
 body {
   
   line-height: 1.6;
-  background-color: linear-gradient(to top, #2e0b3b, #000000);
+  /* background: linear-gradient(to left, var(--color-primario), var(--color-secundario)); */
+  background: linear-gradient(to left, var(--color-primario), var(--color-secundario), var(--color-terciario), black);
   color: #d4cfcf;
 }
 
@@ -20,32 +30,38 @@ a {
 }
 
 a:hover {
-  color: #0077b6;
+  color: #210427;
+
 }
 
 /* Header */
 header {
-  background-color: #0077b6;
-  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px 0;
+  color: #fff;
   position: sticky;
   top: 0;
+  height: 80px;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(235, 231, 231, 0.1);
 }
 
 header nav {
   display: flex;
+  height: 12vh;
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 80px;
 }
 
-header .logo {
-  font-size: 1.5em;
-  font-weight: bold;
+
+/* Estilos del logo */
+.logo img {
+  height: 100px;
+  width: auto;
 }
 
 header ul {
@@ -54,42 +70,61 @@ header ul {
 }
 
 header ul li {
-  margin-left: 20px;
+  margin-left: 40px;
+  border-radius: 5px;
+  background-color: #005f8c;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  transition: all 0.5s;
 }
 
 header ul li a {
   padding: 8px 15px;
   font-weight: bold;
+  border-radius: 5px;
   color: #fff;
 }
 
 header ul li a:hover {
   background-color: #005f8c;
-  border-radius: 5px;
+  
 }
 
 /* Sección Inicio */
 #inicio {
-  background: url('ruta/a/imagen_portada.jpg') no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
+  position: relative;
+  background-color: red;
+  height: 88vh;
+  display: i;
   justify-content: center;
   align-items: center;
-  color: white;
+  flex-direction: column;
+  color: #210427;
   text-align: center;
-  padding: 0 20px;
+  padding: 90px 10px;
+  border-radius: 40px;
+  
+}
+
+.img-content{
+  background-image: url("/img/miFoto.png");
+  background-image: c;
+  width: 400px;
+  height: 400px;;
+  border-radius: 50%;
+
 }
 
 #inicio h1 {
   font-size: 3rem;
   margin-bottom: 10px;
+  color: #ccc;
 }
 
 #inicio p {
   font-size: 1.2rem;
 }
 
-#inicio .cta {
+/* #inicio .cta {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #0077b6;
@@ -98,7 +133,7 @@ header ul li a:hover {
   font-size: 1rem;
   cursor: pointer;
   border-radius: 5px;
-}
+} */
 
 #inicio .cta:hover {
   background-color: #005f8c;
