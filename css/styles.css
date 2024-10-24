@@ -3,9 +3,9 @@
   --color-primario: #220022;
   --color-secundario: #300225;
   --color-terciario: #300036;
-  --color-fondo: #ecf0f1; /* Color de fondo */
-  --color-texto: #2c3e50; /* Color de texto */
-  --color-texto-claro: #ffffff; /* Color de texto claro */
+  --color-fondo: linear-gradient(45deg, #df3fc8, #df3fc8, #000000); 
+  --color-texto: #2c3e50; 
+  --color-texto-claro: #ffffff;
 }
 /* General */
 * {
@@ -18,8 +18,7 @@
 body {
   
   line-height: 1.6;
-  /* background: linear-gradient(to left, var(--color-primario), var(--color-secundario)); */
-  background: linear-gradient(to left, var(--color-primario), var(--color-secundario), var(--color-terciario), black);
+  background: var(--color-fondo);
   color: #d4cfcf;
 }
 
@@ -39,13 +38,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0PX;
   color: #fff;
   position: sticky;
   top: 0;
-  height: 80px;
+  height: 60px;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(235, 231, 231, 0.1);
+  background-color: var(--color-primario);
 }
 
 header nav {
@@ -72,9 +72,8 @@ header ul {
 header ul li {
   margin-left: 40px;
   border-radius: 5px;
-  background-color: #005f8c;
+  background-color: transparent(90% );
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
-  transition: all 0.5s;
 }
 
 header ul li a {
@@ -82,36 +81,36 @@ header ul li a {
   font-weight: bold;
   border-radius: 5px;
   color: #fff;
+  transition: 0,4s all ease-in-out;
 }
 
 header ul li a:hover {
   background-color: #005f8c;
+
   
 }
 
 /* Sección Inicio */
 #inicio {
   position: relative;
-  background-color: red;
-  height: 88vh;
-  display: i;
-  justify-content: center;
+  height: 87vh;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   color: #210427;
   text-align: center;
   padding: 90px 10px;
   border-radius: 40px;
   
-}
+} 
 
-.img-content{
-  background-image: url("/img/miFoto.png");
-  background-image: c;
-  width: 400px;
-  height: 400px;;
+.inicio-content img {
+  background-image: url(/img/miFoto.png) no-repeat center/cover fixed #fafafa;
+  height: 450px;
+  width: 450px;
   border-radius: 50%;
-
 }
 
 #inicio h1 {
